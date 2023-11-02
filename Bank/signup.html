@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--icons css file (all.min.css)-->
+    <link rel="stylesheet" href="BOOTSTRAP/all.min.css">
+    <!--bootstrap css and js files-->
+    <link rel="stylesheet" href="BOOTSTRAP/bootstrap.css">
+    <script defer src="BOOTSTRAP/bootstrap.js"></script>
+   
+    <!--google fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <!--progress bar css file (user-defined)-->
+    <link rel="stylesheet" href="CSS/signup.css">
+
+</head>
+
+<body class="bg-light   ">
+    <div class="container">
+
+
+        <!--Form-1-->
+        <div class="form-1" id="form-1">
+            <section class="step-wizard col-4 m-auto">
+                <ul class="step-wizard-list">
+                    <li class="step-wizard-item current-item">
+                        <span class="progress-count">1</span>
+                        <span class="progress-label">Personal Details</span>
+                    </li>
+                    <li class="step-wizard-item">
+                        <span class="progress-count">2</span>
+                        <span class="progress-label">Create Password</span>
+                    </li>
+                    <li class="step-wizard-item">
+                        <span class="progress-count">3</span>
+                        <span class="progress-label">Pin Generation</span>
+                    </li>
+                    <li class="step-wizard-item">
+                        <span class="progress-count">4</span>
+                        <span class="progress-label">Success</span>
+                    </li>
+                </ul>
+            </section>
+
+
+
+            <div class=" row  mb-5">
+                <div class="inner-div col-4 bg-white m-auto">
+                    <h2 class="text-center heading">Sign Up </h2>
+                    <form action="signup.php" method="post">
+                        <div class="input-group mt-4">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            <input type="text" class="fname-input form-control" id="fname" placeholder="First Name" name="fname">
+                        </div>
+
+                        <div class="input-group mt-4">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                        </div>
+                        <div class="input-group mt-4">
+                            <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" class="form-control" placeholder="Email1234@mail.com" id="email">
+                        </div>
+                        <div class="input-group mt-4">
+                            <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+                            <input type="tel" class="form-control" placeholder="Mobile Number" id="mno">
+                        </div>
+                        <div class="gender mt-4 input-group ">
+                            <span class="input-group-text"><i class="fa-solid fa-venus-mars"></i></span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select Gender</option>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                                <option value="O">Others</option>
+                            </select>
+                        </div>
+                        <div class="input-group mt-4">
+                            <span class="input-group-text"><i class="fa-solid fa-calendar"></i></span>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="mb-3 mt-4">
+                            <label for="formFileSm" class="form-label">Profile Photo</label>
+                            <input class="form-control form-control-sm" id="formFileSm" type="file">
+                        </div>
+                        <div class="address-div ">
+                            <label for="address" class="form-label">Present Address</label>
+                            <textarea class="form-control" name="address" id="address" cols="38" rows="5"></textarea>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <input type="submit" class="btn btn-primary " value="Sign Up" />
+                        </div>
+                        <hr>
+                        <div class="login-link">
+                            <label for="">Already have an account?</label>
+                            <a href="login.html">Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

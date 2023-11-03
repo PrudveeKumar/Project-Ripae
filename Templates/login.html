@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--Bootstrap-->
+   <link rel="stylesheet" href="BOOTSTRAP/bootstrap.css">
+   <script src="BOOTSTRAP/bootstrap.js"></script>
+    <!--Font awesome -->
+    <link rel="stylesheet" href="BOOTSTRAP/all.min.css">
+    <style>
+        .cont1{
+            height: 100vh;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .form-div{
+            border: 1px solid;
+            position:absolute;
+            left:50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+
+        .login-btn{
+
+            width: 100px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="cont1">
+        <div class="row">
+            <div class="form-div col-4 rounded-5 m-auto bg-white">
+                <h1 class="heading text-center">Login</h1>
+                <form action="#" method="post" class="login-form">
+                    <div class="input-group mb-4">
+                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                        <input type="email" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="text-center mb-4">
+                        <input type="submit" class="btn btn-primary login-btn" value="Login">
+                    </div>
+                </form>
+                <hr>
+                <div class="mb-4">
+                    <label for="signup-link">Not a member ?</label>
+                    <a href="signup.html">Create Account</a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,138 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.cont{
+width: 100%;
+min-height: 100vh;
+overflow: hidden;
+box-sizing: border-box;
+background-color: rgb(255, 255, 255);
+
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10%;
+    position: relative;
+    
+}
+
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14;
+}
+
+
+nav ul li a:hover{
+    color: rgb(64, 91, 201);
+}
+
+
+.profile-pic{
+    border-radius: 50%;
+    margin-left: 30px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+}
+
+.open-menu{
+    max-height: 380px;
+}
+
+.sub-menu{
+    background: white;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+
+}
+
+.user-info h2{
+    font-weight: 500;
+}
+
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.sub-menu hr{
+    height: 1px;
+    border: 0;
+    width: 100%;
+    background:black;
+    margin: 15px 0 10px;
+}
+
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 12px 0;
+    color: #000;
+   
+
+}
+
+
+.sub-menu-link p{
+    width: 100%;
+}
+
+
+.sub-menu-link i{
+    width: 40px;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+    font-weight: 600;
+}

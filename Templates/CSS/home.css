@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+width: 100%;
+min-height: 100vh;
+overflow: hidden;
+box-sizing: border-box;
+padding-right: 8%;
+padding-left: 8%;
+
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+
+nav{
+    flex: 1;
+    text-align:right;
+    
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14;
+}
+
+
+nav ul li a:hover{
+    color: rgb(64, 91, 201);
+}
+
+
+.profile-div{
+    border-radius: 50%;
+    border: 1px solid black;
+   
+
+}
